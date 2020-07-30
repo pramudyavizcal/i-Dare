@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_png">
+    <ImageButton
+        android:id="@+id/addQuestionBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:background="#00000000"
+        android:tint="@color/white"
+        android:src="@drawable/leftarrow"
+        />
+
+    <EditText
+        android:id="@+id/userQuestionEntry"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:hint="Tuliskan perintah kamu."
+        android:background="@drawable/bg_edittext"/>
+
+    <Button
+        android:id="@+id/addToTruthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userQuestionEntry"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Tambahkan ke Truth"
+        android:textAllCaps="false"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Button
+        android:id="@+id/addToDareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/userQuestionEntry"
+        android:layout_marginTop="20dp"
+        android:text="Tambahkan ke Dare"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+</RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7496679438317923/6969290030">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

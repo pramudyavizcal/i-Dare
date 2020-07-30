@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/background_png">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tentukan Posisi"
+        android:textAlignment="center"
+        android:fontFamily="@font/fredokaone_regular"
+        android:textStyle="bold"
+        android:id="@+id/textwelcome2"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="312dp"
+        android:layout_height="385dp"
+        android:layout_marginBottom="4dp"
+        app:lottie_autoPlay="true"
+        android:layout_below="@id/textwelcome2"
+        android:background="@drawable/btn_bg_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:lottie_fileName="img2.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihlah posisi duduk yang nyaman disarankan membuat lingkaran"
+        android:textAlignment="center"
+        android:layout_below="@id/animation_view"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fredokaone_regular"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

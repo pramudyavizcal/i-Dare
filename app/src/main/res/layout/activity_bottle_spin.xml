@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_png">
+    <TextView
+        android:id="@+id/tvspinbottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Letakkan HP kamu di tengah meja permainan dan tekan SPIN biarkan botol memutar sampai berhenti menunjuk kepada siapa yang harus mengambil Truth atau Dare"
+        android:fontFamily="@font/fredokaone_regular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        />
+
+    <ImageView
+        android:id="@+id/bottlespin"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        app:srcCompat="@drawable/bottlespin" />
+
+    <Button
+        android:id="@+id/spinmulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="SPIN"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/bottlespin"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/spinselesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="OK"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/bottlespin"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>
+</RelativeLayout>

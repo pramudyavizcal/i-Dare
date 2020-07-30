@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:id="@+id/settingsBackBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@color/colorAccent"
+        android:background="@android:color/transparent"
+        />
+    <Button
+        android:id="@+id/restoreDefaultQuestionsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restore Original Questions"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+</RelativeLayout>

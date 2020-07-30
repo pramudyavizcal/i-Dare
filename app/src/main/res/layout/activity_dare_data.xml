@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageButton
+            android:id="@+id/viewDareQuestionBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/leftarrow"
+            android:scaleType="fitCenter"
+            android:tint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/viewTruthQuestions"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="View Truth Questions"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewDareQuestionBackBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Pertanyaan Dare"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone_regular"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/dareQuestionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonContainer">
+    </ListView>
+
+</RelativeLayout>

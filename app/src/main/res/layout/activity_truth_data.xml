@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/buttonContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageButton
+            android:id="@+id/viewTruthQuestionBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/leftarrow"
+            android:scaleType="fitCenter"
+            android:tint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/viewDareQuestions"
+            android:layout_width="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="View Dare Questions"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewTruthQuestionBackBtn"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Pertanyaan Truth"
+            android:fontFamily="@font/fredokaone_regular"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/truthQuestionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonContainer2">
+        <!-- android:background="@android:color/transparent"> -->
+    </ListView>
+
+</RelativeLayout>

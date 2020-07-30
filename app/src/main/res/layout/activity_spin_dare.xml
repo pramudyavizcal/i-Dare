@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_png">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bottle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        app:lottie_speed="1"
+        app:lottie_fileName="img5.json"
+        app:lottie_loop="false" />
+
+    <Button
+        android:id="@+id/spindare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:text="Terima Surat Tantangan Saya"
+        android:layout_below="@id/bottle"
+        android:fontFamily="@font/roboto"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/opendare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:layout_below="@id/bottle"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        android:text="Buka Surat Tantangan Saya"
+        android:visibility="invisible"
+        android:textSize="30sp" />
+
+</RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7496679438317923/6969290030">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
